@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>PW Webpage</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                document.querySelector('#amibt').onclick = function() {
+                    window. open("https://www.google.com/maps/place/Anna+Maria+Island/@27.4918358,-82.7870722,19946m/data=!3m2!1e3!4b1!4m5!3m4!1s0x88c3103a2e9d2799:0x6ccdb212e43a70c5!8m2!3d27.5041264!4d-82.7144811")
+                };
+                document.querySelector('#utbt').onclick = function() {
+                    window. open("https://www.google.com/maps/place/Willis+Creek+Slot+Canyon+trailhead/@37.4830968,-112.0987962,558m/data=!3m1!1e3!4m5!3m4!1s0x873513004b94781f:0x1f11f2f4ebeb0dc2!8m2!3d37.4830585!4d-112.0971225")
+                };
+                document.querySelector('#switzbt').onclick = function() {
+                    window. open("https://www.google.com/maps/place/Lauterbrunnen,+Switzerland/@46.574836,7.8902599,7728m/data=!3m1!1e3!4m5!3m4!1s0x478fa0073b1165c7:0x5392dbb55902c31!8m2!3d46.5935058!4d7.9090981")
+                };
+                document.querySelector('#ystonebt').onclick = function() {
+                    window. open("https://www.google.com/maps/place/Yellowstone+National+Park/@44.585403,-111.0745316,128115m/data=!3m2!1e3!4b1!4m5!3m4!1s0x5351e55555555555:0xaca8f930348fe1bb!8m2!3d44.427963!4d-110.588455")
+                };
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <h1>
+            <strong>Great Places to Visit</strong>
+        </h1>
+
+        <div class="Places" style="background-image: url('y2.JPG'); background-position: center center;">
+            <ul>
+                <li><a href=ystone.html>Yellowstone</a></li>
+                <li><a href=ami.html>AMI</a></li>
+                <li><a href=utah.html>Utah</a></li>
+                <li><a href=switz.html>Lauterbrunen Valley</a></li>
+            </ul>
+        </div>
+
+        <div class="bot">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pathlink">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    <li class="breadcrumb-item"><a href="ami.html">AMI</a></li>
+                    <li class="breadcrumb-item"><a href="switz.html">Lauterbrunnen</a></li>
+                    <li class="breadcrumb-item"><a href="utah.html">Utah</a></li>
+                    <li class="breadcrumb-item"><a href="ystone.html">Yellowstone</a></li>
+                    <li class="breadcrumb-item"><a href=soctriv.html>Soccer Trivia</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="gothere">
+            Where are they?
+            <p>
+                <button id="amibt" type="button" class="btn btn-info btn-sm">AMI</button>
+                <button id="utbt" type="button" class="btn btn-info btn-sm">Utah</button>
+                <button id="switzbt" type="button" class="btn btn-info btn-sm">Lauterbrunnen</button>
+                <button id="ystonebt" type="button" class="btn btn-info btn-sm">Yellowstone</button>
+            </p>
+        </div>
+
+
+    </body>
+</html>
